@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Dog Carousel</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <h1>Dog Carousel</h1>
+
+    <div class="owl-carousel">
+      <div class="item"><img src="https://static.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg" alt="dummy image"></div>
+      <div class="item"><img src="https://static.pexels.com/photos/117486/pexels-photo-117486.jpeg" alt="dummy image"></div>
+      <div class="item"><img src="https://static.pexels.com/photos/1173/animal-dog-pet-cute.jpg" alt="dummy image"></div>
+      <div class="item"><img src="https://static.pexels.com/photos/97082/weimaraner-puppy-dog-snout-97082.jpeg" alt="dummy image"></div>
+      <div class="item"><img src="https://static.pexels.com/photos/119592/pexels-photo-119592.jpeg" alt="dummy image"></div>
+      <div class="item"><img src="https://static.pexels.com/photos/96424/pexels-photo-96424.jpeg" alt="dummy image"></div>
+      <div class="item"><img src="https://static.pexels.com/photos/130763/pexels-photo-130763.jpeg" alt="dummy image"></div>
+      <div class="item"><img src="https://static.pexels.com/photos/110091/pexels-photo-110091.jpeg" alt="dummy image"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayTimeout: 4000,
+          autoplayHoverPause: true,
+          items : 1,
+          loop : true,
+          margin : 10,
+          nav : true,
+          dots: true
+      })
+     })
+    </script>
+  </body>
+</html>
